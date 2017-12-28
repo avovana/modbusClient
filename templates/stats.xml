@@ -1,0 +1,10 @@
+ <internal>
+	<tag type="ui16" name="Количество полученных пакетов" id="RX_CNT" external="%1_RCV_CNT"/>
+	<tag type="ui16" name="Количество коммуникационных ошибок" id="PACKET_ERR_CNT"  external="%1_ERR_CNT"/>
+	<tag type="ui16" name="Метка времени последнего запроса(наносекунды)" id="RX_TIME.NSEC" external="%1_REQ_TS_NS"/>
+	<tag type="ui16" name="Количество отправленных пакетов" id="TX_CNT"  external="%1_SND_CNT"/>
+	<tag type="ui16" name="Метка времени последнего принятого ответа(секунды, начиная с 00:00:001 января 1970 года)" id="TX_TIME.SEC" external="%1_ANS_TS_S"/>
+	<tag type="ui16" name="Метка времени последнего принятого ответа(наносекунды)" id="TX_TIME.NSEC" external="%1_ANS_TS_NS"/>
+	<tag type="ui16" name="Количество последовательных неуспешных опросов" id="SEQ_ERR_CNT" external="%1_SQE_ERR_CNT"/>
+	<tag type="ui16" name="Метка времени последнего запроса(секунды, начиная с 00:00:001 января 1970 года)" id="RX_TIME.SEC" external="%1_REQ_TS_S"/>
+</internal>

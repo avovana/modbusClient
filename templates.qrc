@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>templates/manager.xml</file>
+        <file>templates/stats.xml</file>
+    </qresource>
+</RCC>

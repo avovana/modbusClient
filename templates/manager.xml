@@ -1,0 +1,338 @@
+<pou type="st" pouType="functionBlock" name="%1">
+    <interface>
+        <externalVars>
+            <variable documentation="" name="%1_LINK_FAIL">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_RCV_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_SND_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_REQ_TS_S">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_REQ_TS_NS">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_ANS_TS_S">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_ANS_TS_NS">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_ERR_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_SQE_ERR_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_WR_QUEUE_EMPTY">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_UPDATED">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_UPD_ERR">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_SPEC_ANS_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_SPEC_ANS_STATUS">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_CLIENT_EN">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_NUMBER">
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_UPD_CONT">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_UPD_PERIOD">
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_UPD_ONCE">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_EXTRA_READ">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_GRP_STATUS_RESET">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_SPEC_REQ_CNT">
+                <type>
+                    <BYTE/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_SPEC_REQ_START">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_BYTE_TIMEOUT">
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_ANSWER_TIMEOUT">
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="%1_RETRY">
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+        </externalVars>
+        <inputVars>
+            <variable documentation="" name="CLIENT_EN">
+                <initialValue>
+                    <simpleValue value="1"/>
+                </initialValue>                
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="GRP_NUMBER">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="GRP_UPD_CONT">
+                <initialValue>
+                    <simpleValue value="1"/>
+                </initialValue>                
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="GRP_UPD_PERIOD">
+                <initialValue>
+                    <simpleValue value="1000"/>
+                </initialValue>                
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="GRP_UPD_ONCE">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="GRP_EXTRA_READ">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="GRP_STATUS_RESET">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="SPEC_REQ_CNT">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <BYTE/>
+                </type>
+            </variable>
+            <variable documentation="" name="SPEC_REQ_START">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="" name="BYTE_TIMEOUT">
+                <initialValue>
+                    <simpleValue value="100"/>
+                </initialValue>                
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="ANSWER_TIMEOUT">
+                <initialValue>
+                    <simpleValue value="1000"/>
+                </initialValue>                
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+            <variable documentation="" name="RETRY">
+                <initialValue>
+                    <simpleValue value="0"/>
+                </initialValue>                
+                <type>
+                    <INT/>
+                </type>
+            </variable>
+        </inputVars>
+        <outputVars>
+            <variable documentation="Флаг устройство не на связи" name="LINK_FAIL">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="Кол-во пакетов, полученных от подчиненного устройства" name="RCV_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Кол-во пакетов, отправленных подчиненному устройству" name="SND_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Метка времени отправки последнего запроса к подчиненному устройству(в секундах, начиная с полуночи по локальному времени 1 января 1970 года)" name="REQ_TS_S">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Наносекундная часть метки времени отправки последнего запроса к подчиненному устройству" name="REQ_TS_NS">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Метка времени получения последнего ответа, полученного от подчиненного устройства(в секундах, начиная с полуночи по локальному времени 1 января 1970 года)" name="ANS_TS_S">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Наносекундная часть метки времени получения последнего ответа от подчиненного устройства" name="ANS_TS_NS">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Кол-во коммуникационных ошибок" name="ERR_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Кол-во последовательных неуспешных запросов" name="SQE_ERR_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Очередь записи пуста" name="WR_QUEUE_EMPTY">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="Обновление группы завершено" name="GRP_UPDATED">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="Ошибка обновления группы" name="GRP_UPD_ERR">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+            <variable documentation="Длина подчиненного ответа на произвольный запрос" name="SPEC_ANS_CNT">
+                <type>
+                    <UINT/>
+                </type>
+            </variable>
+            <variable documentation="Статус выполнения произвольного запроса" name="SPEC_ANS_STATUS">
+                <type>
+                    <BOOL/>
+                </type>
+            </variable>
+        </outputVars>
+    </interface>
+    <body>
+        <ST>
+            <xhtml:p><![CDATA[
+%1_CLIENT_EN:=CLIENT_EN;
+%1_GRP_NUMBER:=GRP_NUMBER;
+%1_GRP_UPD_CONT:=GRP_UPD_CONT;
+%1_GRP_UPD_PERIOD:=GRP_UPD_PERIOD;
+%1_GRP_UPD_ONCE:=GRP_UPD_ONCE;
+%1_GRP_EXTRA_READ:=GRP_EXTRA_READ;
+%1_GRP_STATUS_RESET:=GRP_STATUS_RESET;
+%1_SPEC_REQ_CNT:=SPEC_REQ_CNT;
+%1_SPEC_REQ_START:=SPEC_REQ_START;
+%1_BYTE_TIMEOUT:=BYTE_TIMEOUT;
+%1_ANSWER_TIMEOUT:=ANSWER_TIMEOUT;
+%1_RETRY:=RETRY;
+LINK_FAIL:=%1_LINK_FAIL;
+RCV_CNT:=%1_RCV_CNT;
+SND_CNT:=%1_SND_CNT;
+REQ_TS_S:=%1_REQ_TS_S;
+REQ_TS_NS:=%1_REQ_TS_NS;
+ANS_TS_S:=%1_ANS_TS_S;
+ANS_TS_NS:=%1_ANS_TS_NS;
+ERR_CNT:=%1_ERR_CNT;
+SQE_ERR_CNT:=%1_SQE_ERR_CNT;
+WR_QUEUE_EMPTY:=%1_WR_QUEUE_EMPTY;
+GRP_UPDATED:=%1_GRP_UPDATED;
+GRP_UPD_ERR:=%1_GRP_UPD_ERR;
+SPEC_ANS_CNT:=%1_SPEC_ANS_CNT;
+SPEC_ANS_STATUS:=%1_SPEC_ANS_STATUS;]]></xhtml:p>
+
+        </ST>
+    </body>
+</pou>
